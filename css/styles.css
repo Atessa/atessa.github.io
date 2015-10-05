@@ -1,0 +1,142 @@
+body {
+	background: #FAF0E6;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 0px;
+	margin: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+	background: linear-gradient(rgba(30,144,255, 0.8), rgba(0, 0, 0, 0.8)), url(../images/baltimore-rowhouses.jpg);
+	text-align: center;
+	text-shadow: 0px 0px 20px #000;
+	padding: 150px;
+}
+
+nav, .about, footer{
+	background-color: #111111;
+	color: white;
+}
+nav a, footer a, .about a{
+	color: #8c9d87;
+}
+
+h1 {
+	color: white;
+	font-size: 50px;
+	font-family: 'Satisfy', cursive;
+}
+
+nav a {
+	padding: 30px;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s linear 0.5s;
+}
+
+nav a:hover {
+	color: #000;
+	background: #fff;
+}
+a.active {
+	color: magenta;
+}
+
+nav {
+	text-align: right;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+
+.content-wrap {
+	width: 800px;
+	margin: 0 auto;
+	padding: 100px;
+}
+
+.logo {
+	font-family: 'Satisfy', cursive;
+	font-size: 28px;
+	border: 2px solid #8c9d87;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	padding: 0px;
+	text-align: center;
+	line-height: 70px;
+	float: left;
+	margin: 5px 0px 5px 5px;
+}
+
+.extras img {
+	border-radius: 0%;
+	margin: 0px 20px 20px 0px;
+	width: 175px;
+	height: 175px;
+}
+
+.about img {
+	border-radius: 50%;
+	width: 175px;
+	height: 175px;
+	float: right;
+	margin: 0px 0px 50px 0px;
+}
+
+@media only screen and (max-width: 640px) {
+
+	nav a:not(first-child) {
+		display: block;
+		padding: 0px 5px;
+	}
+
+	nav a {
+		float: none;
+		color: red;
+	}
+
+	.content-wrap {
+		width: 80%;
+		padding: 10px 10px;
+	}
+
+	.about img {
+		float: none;
+	}
+
+	header {
+		/*
+		padding-top: value;
+		padding-bottom: value;
+		padding-right: value;
+		padding-left: value; 
+		
+		padding: top-value right-value bottom-value left-value;
+		
+		padding: top-bottom-value right-left-value;
+		
+		padding: top-right-bottom-left-value;
+		*/
+		
+		padding: 150px 50px;
+	}
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px){
+	nav a {
+		color: blue;
+	}
+}
